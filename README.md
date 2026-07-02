@@ -22,9 +22,9 @@
 
 ### Key Features
 
-- 🎨 **Multi-style video transfer** — supports 6+ artistic styles with a single framework
+- 🎨 **Multi-style video transfer** — supports 14+ artistic styles with a single framework
 - 🔄 **Dual-LoRA architecture** — separate LoRA models for high-noise (t=900–1000) and low-noise (t=0–900) timestep ranges, yielding better detail preservation
-- ⚡ **Lightning inference** — compatible with [LightX2V](https://github.com/ModelTC/lightx2v) distilled checkpoints for 10-step generation
+- ⚡ **Lightning inference** — compatible with [LightX2V](https://github.com/ModelTC/lightx2v) distilled checkpoints for quick generation
 - 🖥️ **Scalable training** — auto-adapts to multi-node multi-GPU clusters via FSDP + Ulysses sequence parallelism
 
 ## 🔧 Environment Setup
@@ -33,7 +33,7 @@
 
 - Python ≥ 3.10
 - PyTorch ≥ 2.4.0 with CUDA support
-- 8× NVIDIA GPUs (80GB VRAM each recommended, e.g. A100/H100)
+- Inference: 8× NVIDIA GPUs (80GB VRAM each recommended, e.g. A100/H100); Training: 8× NVIDIA A100 80GB at least and 16× NVIDIA A100 80GB recommended
 - Flash Attention 2
 
 ### Installation
