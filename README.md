@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="assets/logo_echostyle.png" width="80%" alt="EchoStyle Logo">
+  <img src="assets/logo_echostyle.png" width="50%" alt="EchoStyle Logo">
 </p>
 
 <h2 align="center">EchoStyle: Unlocking High-Fidelity Video Stylization with Reverse Data Synthesis</h2>
 
 <p align="center">
-  <a href="#">📄 Paper</a> &nbsp;|&nbsp;
-  <a href="#">🤗 Models</a> &nbsp;|&nbsp;
-  <a href="#">🎬 Demo</a>
+  <a href="https://arxiv.org/abs/2606.25465">📄 Paper</a> &nbsp;|&nbsp;
+  <a href="https://echostyle2026.github.io/">🌐 Website</a> &nbsp;|&nbsp;
+  <a href="https://huggingface.co/youchun/echostyle">🤗 Models</a>
 </p>
 
 <p align="center">
