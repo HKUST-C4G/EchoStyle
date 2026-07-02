@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Training outputs
+training_outputs/
+results/
+
+# Cache
+*.safetensors
+.cache/
+
+# Environment
+.env
+.venv/
+venv/
