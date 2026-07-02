@@ -22,6 +22,9 @@ results/
 *.safetensors
 .cache/
 
+# Large media files
+assets/videos/*.mp4
+
 # Environment
 .env
 .venv/

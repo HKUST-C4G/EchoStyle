@@ -344,12 +344,10 @@ def main():
                 )
                 logging.info(f"Saved to {output_path}")
                 if args.concat == True:
-                    pad = src_video[0].shape[1] - gen_video.shape[1]
-                    if pad != 0:
-                        pad_tensor = torch.zeros((gen_video.shape[0], pad, gen_video.shape[2], gen_video.shape[3]), device=gen_video.device)
-                        gen_video = torch.cat([gen_video, pad_tensor], dim=1)
+                    # 将源视频裁剪至与生成视频相同的帧数
+                    src_frames = src_video[0][:, :gen_video.shape[1], :, :]
 
-                    gen_video = torch.cat([src_video[0], gen_video], dim=3)  # 拼接源视频和生成视频
+                    gen_video = torch.cat([src_frames, gen_video], dim=3)  # 拼接源视频和生成视频
                     save_video(
                     tensor=gen_video[None],
                     save_file=output_path[:-4] + "_concat.mp4",
