@@ -40,8 +40,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/echostyle2026/Echostyle-code.git
-cd Echostyle-code
+git clone https://github.com/HKUST-C4G/EchoStyle.git
+cd EchoStyle
 
 # Create conda environment
 conda create -n echostyle python=3.10 -y
@@ -242,7 +242,7 @@ Under the hood, the script constructs the appropriate `torchrun` command with `-
 ## 📁 Project Structure
 
 ```
-Echostyle-code/
+EchoStyle/
 ├── assets/
 │   ├── logo_echostyle.png        # Project logo
 │   └── videos/                   # Demo videos (01–11.mp4)
@@ -267,9 +267,9 @@ Echostyle-code/
 ## 📝 Citation
 
 ```bibtex
-@inproceedings{echostyle2026,
+@inproceedings{li2026echostyle,
   title={EchoStyle: Unlocking High-Fidelity Video Stylization with Reverse Data Synthesis},
-  author={Huaqiu Li, Jiahao Wang, Sijia Cai, Hualian Sheng, Bing Deng, Jieping Ye, Wenhan Luo},
+  author={Li, Huaqiu and Wang, Jiahao and Cai, Sijia and Sheng, Hualian and Deng, Bing and Ye, Jieping and Luo, Wenhan},
   booktitle={European Conference on Computer Vision (ECCV)},
   year={2026}
 }
